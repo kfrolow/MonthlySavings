@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monthly savings</title>
+  <script type="text/javascript">
+    function substitute()  {
+	  var IncomeVal = document.getElementById('Income').value;
+	  var ExpencesVal = document.getElementById('Expences').value;
+	  var Savings = document.getElementById('Savings');
+	  Savings.value = IncomeVal - ExpencesVal
+	}
+  </script>
+  
+</head>
+<body>
+  <h1 id="title">Monthly savings:</h1>
+
+  <input type="text" id="Income" />
+ - <input type="text" id="Expences" />
+ = <input type="text" id="Savings" />
+  <input type="submit" value="Calculate" onclick="substitute();" />
+  
+</body>
+</html>
